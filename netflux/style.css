@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #141414;
+    color: white;
+}
+
+/* Styles de la barre de navigation */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.7) 10%, transparent);
+    padding: 20px 0;
+}
+
+.nav-content {
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 0 4%;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    color: #e50914;
+    font-size: 2rem;
+    margin-right: 40px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #e5e5e5;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: white;
+}
+
+/* Section film vedette */
+.featured {
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.featured::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 7.4rem;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8), #141414);
+}
+
+.featured-content {
+    position: absolute;
+    bottom: 35%;
+    left: 4%;
+    width: 50%;
+}
+
+.featured-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.featured-description {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.45);
+}
+
+.featured-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-play {
+    background-color: white;
+    color: black;
+}
+
+.btn-info {
+    background-color: rgba(109, 109, 110, 0.7);
+    color: white;
+}
+
+.btn span {
+    margin-right: 10px;
+}
+
+/* Sections des films */
+.movies-sections {
+    margin-top: -150px;
+    position: relative;
+    z-index: 1;
+}
+
+.movie-row {
+    padding: 20px 4%;
+    margin-bottom: 20px;
+}
+
+.movie-row h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.slider-container {
+    position: relative;
+}
+
+.movies-slider {
+    display: flex;
+    gap: 8px;
+    transition: transform 0.5s ease;
+    overflow-x: hidden;
+}
+
+.movie-card {
+    flex: 0 0 calc(100% / 4 - 8px);
+    position: relative;
+}
+
+.movie-card img {
+    width: 100%;
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+}
+
+.movie-card:hover img {
+    transform: scale(1.05);
+}
+
+.slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.slider-container:hover .slider-arrow {
+    opacity: 1;
+}
+
+.arrow-left {
+    left: 0;
+}
+
+.arrow-right {
+    right: 0;
+}
+
+.movie-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.movie-card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.9));
+    padding: 20px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.movie-card:hover .movie-card-overlay {
+    transform: translateY(0);
+}
+
+.movie-card h4 {
+    margin: 0 0 10px 0;
+    font-size: 1.1rem;
+}
+
+.movie-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+.rating {
+    color: #ffd700;
+}
+
+.movie-overview {
+    font-size: 0.8rem;
+    line-height: 1.4;
+    opacity: 0.8;
+}
+
+.error-message {
+    color: #ff6b6b;
+    text-align: center;
+    padding: 20px;
+}

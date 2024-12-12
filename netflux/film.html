@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone - Séries TV</title>
+    <link rel="stylesheet" href="film.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation principale -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <h1 class="logo">NETFLIX</h1>
+            <div class="nav-links">
+                <a href="index.html">Accueil</a>
+                <a href="series.html" class="active">Séries</a>
+                <a href="#">Films</a>
+                <a href="#">Nouveautés</a>
+                <a href="#">Ma liste</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section série vedette -->
+    <div class="featured">
+        <div class="featured-content">
+            <div class="series-badge">SÉRIE</div>
+            <h2 class="featured-title"></h2>
+            <p class="featured-description"></p>
+            <div class="series-info">
+                <span class="series-rating"></span>
+                <span class="series-year"></span>
+                <span class="series-seasons"></span>
+            </div>
+            <div class="featured-buttons">
+                <button class="btn btn-play">
+                    <span class="play-icon">▶</span>
+                    Lecture
+                </button>
+                <button class="btn btn-info">
+                    <span class="info-icon">ℹ</span>
+                    Plus d'infos
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sections des séries -->
+    <div class="series-sections">
+        <!-- Séries populaires -->
+        <div class="series-row">
+            <h3>Séries populaires</h3>
+            <div class="slider-container">
+                <button class="slider-arrow arrow-left">❮</button>
+                <div class="series-slider popular-series">
+                    <!-- Les séries seront ajoutées ici par JavaScript -->
+                </div>
+                <button class="slider-arrow arrow-right">❯</button>
+            </div>
+        </div>
+
+        <!-- Séries tendances -->
+        <div class="series-row">
+            <h3>Tendances de la semaine</h3>
+            <div class="slider-container">
+                <button class="slider-arrow arrow-left">❮</button>
+                <div class="series-slider trending-series">
+                    <!-- Les séries seront ajoutées ici par JavaScript -->
+                </div>
+                <button class="slider-arrow arrow-right">❯</button>
+            </div>
+        </div>
+
+        <!-- Séries les mieux notées -->
+        <div class="series-row">
+            <h3>Séries les mieux notées</h3>
+            <div class="slider-container">
+                <button class="slider-arrow arrow-left">❮</button>
+                <div class="series-slider top-rated-series">
+                    <!-- Les séries seront ajoutées ici par JavaScript -->
+                </div>
+                <button class="slider-arrow arrow-right">❯</button>
+            </div>
+        </div>
+
+        <!-- Nouveautés -->
+        <div class="series-row">
+            <h3>Nouveautés</h3>
+            <div class="slider-container">
+                <button class="slider-arrow arrow-left">❮</button>
+                <div class="series-slider new-series">
+                    <!-- Les séries seront ajoutées ici par JavaScript -->
+                </div>
+                <button class="slider-arrow arrow-right">❯</button>
+            </div>
+        </div>
+    </div>
+    <button></button>
+
+    <script src="film.js"></script>
+</body>
+</html>

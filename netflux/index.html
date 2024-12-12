@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation principale -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <h1 class="logo">NETFLUX</h1>
+            <div class="nav-links">
+                <a href="#" class="active">Accueil</a>
+                <a href="film.html">Séries</a>
+                <a href="#">Films</a>
+                <a href="#">Nouveautés</a>
+                <a href="#">Ma liste</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section film vedette -->
+    <div class="featured">
+        <div class="featured-content">
+            <h2 class="featured-title"></h2>
+            <p class="featured-description"></p>
+            <div class="featured-buttons">
+                <button class="btn btn-play">
+                    <span class="play-icon">▶</span>
+                    Lecture
+                </button>
+                <button class="btn btn-info">
+                    <span class="info-icon">ℹ</span>
+                    Plus d'infos
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sections des films -->
+    <div class="movies-sections">
+        <!-- Section Films populaires -->
+        <div class="movie-row">
+            <h3>Populaire sur Netflix</h3>
+            <div class="slider-container">
+                <button class="slider-arrow arrow-left">❮</button>
+                <div class="movies-slider popular-movies">
+                    <!-- Les films seront ajoutés ici par JavaScript -->
+                </div>
+                <button class="slider-arrow arrow-right">❯</button>
+            </div>
+        </div>
+
+        <!-- Section Tendances -->
+        <div class="movie-row">
+            <h3>Tendances actuelles</h3>
+            <div class="slider-container">
+                <button class="slider-arrow arrow-left">❮</button>
+                <div class="movies-slider trending-movies">
+                    <!-- Les films seront ajoutés ici par JavaScript -->
+                </div>
+                <button class="slider-arrow arrow-right">❯</button>
+            </div>
+        </div>
+
+        <!-- Section Top rated -->
+        <div class="movie-row">
+            <h3>Les mieux notés</h3>
+            <div class="slider-container">
+                <button class="slider-arrow arrow-left">❮</button>
+                <div class="movies-slider top-rated-movies">
+                    <!-- Les films seront ajoutés ici par JavaScript -->
+                </div>
+                <button class="slider-arrow arrow-right">❯</button>
+            </div>
+        </div>
+    </div>
+    <img  class="" alt="">
+
+    <script src="index.js"></script>
+</body>
+</html>

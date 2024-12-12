@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détails du film - Netflix Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="movie-page.css">
+</head>
+<body>
+    <!-- Navigation principale -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <h1 class="logo">NETFLIX</h1>
+            <div class="nav-links">
+                <a href="index.html">Accueil</a>
+                <a href="#">Séries</a>
+                <a href="#">Films</a>
+                <a href="#">Nouveautés</a>
+                <a href="#">Ma liste</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenu principal du film -->
+    <div class="movie-detail-container">
+        <!-- Bannière du film -->
+        <div class="movie-banner">
+            <div class="movie-backdrop"></div>
+            <div class="movie-info-overlay">
+                <h1 class="movie-title"></h1>
+                <div class="movie-meta">
+                    <span class="movie-year"></span>
+                    <span class="movie-runtime"></span>
+                    <span class="movie-rating"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Détails du film -->
+        <div class="movie-content">
+            <div class="movie-poster">
+                <img src="" alt="" class="poster-img">
+            </div>
+            <div class="movie-details">
+                <div class="movie-actions">
+                    <button class="btn btn-play">
+                        <span class="play-icon">▶</span>
+                        Lecture
+                    </button>
+                    <button class="btn btn-add">
+                        <span>+</span>
+                        Ma liste
+                    </button>
+                </div>
+                <p class="movie-overview"></p>
+                <div class="movie-extra-info">
+                    <div class="movie-genres"></div>
+                    <div class="movie-cast"></div>
+                    <div class="movie-director"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section des films similaires -->
+        <div class="similar-movies">
+            <h2>Films similaires</h2>
+            <div class="movies-grid"></div>
+        </div>
+    </div>
+
+    <script src="movie-page.js"></script>
+</body>
+</html>
