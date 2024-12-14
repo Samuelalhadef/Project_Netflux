@@ -7,10 +7,7 @@
 
 ![Head](https://github.com/user-attachments/assets/b2838547-33f0-4a9b-b130-fcbd10e2a99e)
 
-[![JavaScript](https://github.com/user-attachments/assets/390b6c44-d433-4e97-a1f9-211f988d6360)](https://www.javascript.com)
-[![HTML5](https://github.com/user-attachments/assets/390b6c44-d433-4e97-a1f9-211f988d6360)](https://html.spec.whatwg.org/)
-[![CSS3](https://github.com/user-attachments/assets/d418ee60-5daf-4fcb-9dfb-9486862d1a12)](https://www.w3.org/Style/CSS/)
-[![TMDB](https://github.com/user-attachments/assets/6ac158e6-0962-43c5-b03f-5b7c662c1401)](https://www.themoviedb.org/)
+
 
 Une reproduction fidèle de l'interface Netflix, construite en JavaScript vanilla et alimentée par l'API TMDB.
 
